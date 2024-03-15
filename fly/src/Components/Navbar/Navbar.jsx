@@ -2,8 +2,9 @@ import React from 'react'
 import {SiConsul} from 'react-icons/si'
 import {BsPhoneVibrate} from 'react-icons/bs'
 import {AiOutlineGlobal} from 'react-icons/ai'
+import {CgMenuGridO} from 'react-icons/cg'
 
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.jpg'
 const Navbar = () => {
   return (
     <div className='navBar flex'>
@@ -25,9 +26,9 @@ const Navbar = () => {
 
 
          </div>
-         <div className="navBartTwo">
+         <div className="navBarTwo flex">
             <div className="logoDiv">
-                <img src={logo} className='Logo' />
+                {/* <img src={logo} className='Logo' /> */}
             </div>
 
             <div className='navBarMenu'>
@@ -42,12 +43,13 @@ const Navbar = () => {
                 Contact
                </button>
             </div>
-            {/* <button className='btn flex btnOne'>
+            <button className='btn flex btnTwo'>
                 Contact
-               </button> */}
+               </button>
 
-               <div>
-                
+               <div className='toggleIcon'>
+                   <CgMenuGridO className='icon'/>
+
                </div>
          </div>
     </div>
