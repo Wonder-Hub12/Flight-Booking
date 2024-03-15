@@ -225,6 +225,11 @@ h2{
                 color: var(--blackColor);
             }
         }
+
+        .showNavBar{
+            right: 50%;
+            transition: .5s ease-in-out;
+        }
     }
       
    

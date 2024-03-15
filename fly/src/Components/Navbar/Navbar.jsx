@@ -9,8 +9,10 @@ const Navbar = () => {
 
   // let us remove in small width
   
-
-
+   const [active, setActive] = useState('navBarMenu')
+   const showNavBar = ()=>{
+        setActive('navBarMenu showNavBar')
+   }
 
 
 
@@ -40,7 +42,7 @@ const Navbar = () => {
                 {/* <img src={logo} className='Logo' /> */}
             </div>
 
-            <div className='navBarMenu'>
+            <div className={active}>
                <ul className='menu flex'>
                 <li className='listItem'>Home</li>
                 <li className='listItem'>About</li>
@@ -56,7 +58,7 @@ const Navbar = () => {
                 Contact
                </button>
 
-               <div className='toggleIcon'>
+               <div onClick={showNavBar}className='toggleIcon'>
                    <CgMenuGridO className='icon'/>
 
                </div>
