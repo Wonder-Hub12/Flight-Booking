@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {SiConsul} from 'react-icons/si'
 import {BsPhoneVibrate} from 'react-icons/bs'
 import {AiOutlineGlobal} from 'react-icons/ai'
 
 import logo from '../../assets/logo.png'
 const Navbar = () => {
+
+  // let us remove in small width
+  
+
+
+
+
+
+
   return (
     <div className='navBar flex'>
          <div className="navBarOne flex">
